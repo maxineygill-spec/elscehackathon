@@ -71,8 +71,21 @@ const RegistrationSection = () => {
                   <SelectItem value="ethics-in-context">Ethics in Context</SelectItem>
                   <SelectItem value="shifting-perspectives">Shifting Perspectives</SelectItem>
                   <SelectItem value="no-preference">No preference</SelectItem>
-                </SelectContent>
-              </Select>
+            </SelectContent>
+            </Select>
+            </div>
+            <div>
+              <Label className="font-body">CV or LinkedIn profile *</Label>
+              <p className="text-xs text-muted-foreground mt-1 mb-2">Upload a CV or provide your LinkedIn URL to verify your affiliation.</p>
+              <div className="space-y-2">
+                <Input id="linkedin" type="url" className="mt-1" placeholder="https://linkedin.com/in/yourprofile" />
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="flex-1 border-t border-border" />
+                  <span>or</span>
+                  <span className="flex-1 border-t border-border" />
+                </div>
+                <Input id="cv" type="file" accept=".pdf,.doc,.docx" className="mt-1 cursor-pointer" />
+              </div>
             </div>
             <div>
               <Label htmlFor="team" className="font-body">Team members if already formed (optional)</Label>

@@ -13,7 +13,7 @@ const Index = () => (
     <AboutSection />
     <HowItWorksSection />
     <TracksSection />
-    <WhatsProvidedSection />
+    
     <RegistrationSection />
     <UpdatesSection />
     <FooterSection />

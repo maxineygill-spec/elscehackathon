@@ -70,7 +70,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="font-display font-extrabold text-4xl sm:text-5xl md:text-7xl text-primary-foreground leading-tight mb-8"
         >
-          Can a game help people talk about{" "}
+          Can games help people talk about{" "}
           <span className="pencil-underline">hard things</span>?
         </motion.h1>
 

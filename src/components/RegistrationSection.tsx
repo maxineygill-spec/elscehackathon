@@ -27,11 +27,11 @@ const RegistrationSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-cream rounded-xl p-8 sm:p-10 border border-border shadow-sm"
-        >
+          className="bg-cream rounded-xl p-8 sm:p-10 border border-border shadow-sm">
+          
           <h2 className="font-display font-bold text-3xl text-foreground mb-2 text-center">Register</h2>
-          <p className="text-center text-muted-foreground text-sm mb-8 font-body">
-            Registration is first-come, first-served. Capped at 50 participants.
+          <p className="text-center text-muted-foreground text-sm mb-8 font-body">Registration is first-come, first-served. Act fast to secure your place.
+
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-5">
@@ -89,8 +89,8 @@ const RegistrationSection = () => {
           </form>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default RegistrationSection;

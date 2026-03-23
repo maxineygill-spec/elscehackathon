@@ -52,7 +52,8 @@ const TracksSection = () => (
             <div className={`${track.color} h-2`} />
             <div className="p-6">
               <h3 className="font-display font-bold text-lg text-foreground mb-3">{track.name}</h3>
-              <p className="font-body text-foreground/80 text-sm mb-4">{track.description}</p>
+              <p className="font-body text-foreground/80 text-sm">{track.description}</p>
+            </div>
           </motion.div>
         ))}
       </div>

@@ -14,7 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      judges: {
+        Row: {
+          affiliation: string
+          bio_sentence: string
+          created_at: string
+          headshot_url: string | null
+          id: string
+          name: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          affiliation: string
+          bio_sentence: string
+          created_at?: string
+          headshot_url?: string | null
+          id?: string
+          name: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          affiliation?: string
+          bio_sentence?: string
+          created_at?: string
+          headshot_url?: string | null
+          id?: string
+          name?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
